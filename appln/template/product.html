@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	body{
+  		background-image: url(https://image.shutterstock.com/image-vector/auction-bidding-hands-holding-bids-600w-1647232180.jpg);
+  		background-size: cover;
+  		width: 100px;
+  		height: 100xh;
+  		overflow: auto;
+  		background-repeat: no-repeat;
+  	}
+  	.heading.heading1{
+  		font-size: 30px;
+  		color: #F96;
+  		padding-top: 10px;
+  		text-align: center;
+  		text-decoration: bold;
+  	}
+  	.body1{
+  		background-image: url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg);
+  		text-align: center;
+  		margin: 0 auto;
+  		opacity: 1;
+  		padding-top: 10px;
+  		height: 480px;
+  		margin-top: 166px;
+  		max-width: 550px;
+  		border-style: 1px solid grey;
+  	}
+  	.category{
+  		margin-left: 65px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 5px;
+  	}
+  	.pdtname{
+  		margin-left: 30px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#pdtname{
+  		margin-top: 5px;
+  	}
+  	.description{
+  		margin-left: 47px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#text{
+  		margin-top: 5px;
+  	}
+  	.minprice{
+  		margin-left: 3px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#minprice{
+  		margin-top: 5px;
+  	}
+  	.sdate{
+  		margin-left: 62px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#sdate{
+  		margin-top: 5px;
+  	}
+  	.edate{
+  		margin-left: 65px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#edate{
+  		margin-top: 5px;
+  	}
+  	.addimg{
+  		margin-left: 55px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	.add{
+  		margin-top: 5px;
+  	}
+  </style>
+</head>
+<body>
+	<div class="container">
+	<div class="body1">
+		<header class="heading heading1"> Product Registration</header><hr></hr>
+	<div class="row ">
+         <div class="col-sm-12">
+             <div class="row">
+			     <div class="col-xs-4">
+          	         <label class="category">Category :</label> </div>
+		         <div class="col-xs-8">
+		             <input type="text" id="category" class="form-control ">
+             </div>
+		      </div>
+		 </div>
+		 
+		 
+         <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-4">
+                     <label class="pdtname">Product Name :</label></div>
+				<div class ="col-xs-8">	 
+		             <input type="text" id="pdtname" class="form-control">
+                </div>
+		     </div>
+		 </div>
+		 <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-4">
+		             <label class="description" >Description :</label>
+		         </div>
+			     <div class="col-xs-8"	>	 
+			          <textarea rows="5" id="text"></textarea>
+		         </div>
+		     </div>
+		 </div>
+          <div class="col-sm-12">
+		         <div class="row">
+				     <div class="col-xs-4">
+		 	              <label class="minprice">Minimum Bid Price :</label>
+		 	          </div>
+				  <div class="col-xs-8">
+			             <input type="number" id="minprice" class="form-control">
+				 </div>
+          </div>
+		  </div>
+		  <div class="col-sm-12">
+		  	<div class="row">
+		  		<div class="col-xs-4">
+		  			<label class="sdate">Start Date :</label>
+		  		</div>
+		  		<div class="col-xs-8">
+		  			<input type="date" id="sdate" class="form-control">
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class="col-sm-12">
+		  	<div class="row">
+		  		<div class="col-xs-4">
+		  			<label class="edate">End Date :</label>
+		  		</div>
+		  		<div class="col-xs-8">
+		  			<input type="date" id="edate" class="form-control">
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class="col-sm-12">
+		  	<div class="row">
+		  		<div class="col-xs-4">
+		  			<label class="addimg">Add Image :</label>
+		  		</div>
+		  		<div class="col-xs-8 add">
+		  			<input type="file">
+		  		</div>
+		  	</div>
+		  </div>
+		     <div class="col-sm-12">
+		         <div class="btn btn-warning">Submit</div>
+		   </div>
+		 </div>
+		</div>
+	</div>
+</body>
+</html>

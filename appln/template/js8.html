@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 8</title>
+	
+	
+</head>
+<body>
+	<form>
+<button value="clickme" onclick="alert('Welcome to javascript')"> Click me</button><br><br>
+<input type="button" value=" hover mouse me" onmouseover="alert('You hovered over me ')"> <br><br><br>
+</form>
+<h3> Select a new car from the list</h3>
+<select id ="cars"  onchange="myFunction()">
+	<option value="Audi">Audi</option>
+	<option value="BMW">BMW</option>
+	<option value="Benz">Benz</option>
+	<option value="Porsche">Porsche</option>
+</select>
+<p id = "demo"></p>
+<script type="text/javascript">
+	function myFunction(){
+		var x = document.getElementById("cars").value;
+		document.getElementById("demo").innerHTML
+= "You selected : " +x;	
+}
+</script>
+</body>
+</html>

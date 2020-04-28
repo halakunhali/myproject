@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 15</title>
+</head>
+<body>
+<script type="text/javascript">
+	var arun = new Array(2);
+	arun[0] = Number(prompt("enter maths mark"));
+	arun[1] = Number(prompt("enter english mark"));
+	arun[2] = Number(prompt("enter science mark"));
+	var total = arun[0] + arun[1] + arun[2];
+	var midhun = new Array(2);
+	midhun[0] = Number(prompt("enter maths mark"));
+	midhun[1] = Number(prompt("enter english mark"));
+	midhun[2] = Number(prompt("enter science mark"));
+	var tot = midhun[0] + midhun[1] + midhun[2];
+	document.write("marks for Arun is " + "<br>");
+	document.write("total is " + total + "<br>");
+	document.write("marks for : Midhun is 99,93,50 " + "<br>");
+	document.write("total is " + tot + "<br>");
+	var ans = total - tot;
+	
+	if (tot > total) {
+
+		alert("Midhun has got " + ans + " marks more than Arun");
+	}
+	else{
+		alert("Midhun has got " + ans + "marks less than Arun");
+	}
+</script>
+</body>
+</html>

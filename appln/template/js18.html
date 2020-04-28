@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 18</title>
+</head>
+<body>
+<script type="text/javascript">
+	var mark = new Array(55, 60, 43, 52, 49);
+	var total = mark[0] + mark[1] + mark[2] + mark[3] + mark[4];
+	var perc = total / 5;
+	document.write("your percentage is" + perc);
+	if ((perc >= 80) &&(perc<= 100))  {
+		alert("You got grade A");
+	}
+	else if ((perc >= 60) && (perc <= 79)) {
+		alert(" You got grade B");
+	}
+	else if ((perc >= 40) && (perc <= 59)) {
+		alert("You got grade C");
+	}
+	else if ((perc >= 30) && (perc <= 49)) {
+		alert("You got grade D");
+	}
+	else if ((perc >= 10) && (perc<= 29)) {
+		alert("You got grade E");
+	}
+	else {
+		alert("You failed");
+	}
+
+</script>
+</body>
+</html>

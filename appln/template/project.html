@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+  	#hometab{
+  		background-image: url(https://image.shutterstock.com/image-vector/hands-holding-auction-paddle-flat-600w-691697476.jpg);
+  		background-size: cover;
+  		width: 100%;
+  		height: 100xh;
+  		overflow: auto;
+  		background-repeat: no-repeat;
+  	}
+  	.body{
+  		background-image: url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg);
+  		text-align: center;
+  		margin: 0 auto;
+  		opacity: 0.8;
+  		padding-top: 10px;
+  		height: 383px;
+  		margin-top: 166px;
+  		max-width: 500px;
+  		border-style: 1px solid grey;
+  		box-shadow: 2px 5px 5px 0px #eee;
+
+  	}
+  	.firstname{
+  		margin-left: 1px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 5px;
+  	}
+  	.lastname{
+  		margin-left: 1px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#lname{
+  		margin-top: 5px;
+  	}
+  	.mail{
+  		margin-left: 33px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#mail{
+  		margin-top: 5px;
+  	}
+	.pass{
+  		margin-left: 3px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#pass{
+  		margin-top: 5px;
+  	}
+  	.number{
+  		margin-left: 15px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#number{
+  		margin-top: 5px;
+  	}
+  	.gender{
+  		margin-left: 23px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	.col-xs-4.male{
+  		color: white;
+  		margin-top: 10px;
+  		font-size: 13px;
+
+  	}
+  	.col-xs-4.female{
+  		color: white;
+  		margin-top: 10px;
+  		font-size: 13px;
+  		padding-right: 95px;
+  		
+  	}
+  	.heading{
+  		font-size: 30px;
+  		color: #F96;
+  		padding-top: 10px;
+  		text-align: center;
+  		text-decoration: bold; 
+  	}
+  	.btn.btn-warning{
+  		width: 32%;
+  		font-size: 20px;
+  		border: 1px solid white;
+  	}
+  	.row{
+  		padding-right: 5px;
+  	}
+
+  	#forgotpass{
+  		margin-top: -85px;
+  	}
+  	.text-info{
+  		font-family: perpetua;
+  		font-size: 15px;
+  	}
+  	.btn.btn-info.btn-lg{
+  		font-family: perpetua;
+  		font-size: 20px;
+  	}
+  	.text-center.text-info{
+  		font-size: 20px;
+  	}
+  	.modal-body{
+  		min-height: 350px;
+  	}
+  	#sellbid{
+  		background-image: url(https://image.shutterstock.com/image-vector/auction-bidding-hands-holding-bids-600w-1647232180.jpg);
+  		background-size: cover;
+  		width: 100%;
+  		height: 100xh;
+  		overflow: auto;
+  		background-repeat: no-repeat;
+  	}
+  	.heading.heading1{
+  		font-size: 30px;
+  		color: #F96;
+  		padding-top: 10px;
+  		text-align: center;
+  		text-decoration: bold;
+  	}
+  	.body1{
+  		background-image: url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg);
+  		text-align: center;
+  		margin: 0 auto;
+  		opacity: 1;
+  		padding-top: 10px;
+  		height: 500px;
+  		margin-top: 166px;
+  		max-width: 550px;
+  		border-style: 1px solid grey;
+  	}
+  	.category{
+  		margin-left: 65px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 5px;
+  	}
+  	.pdtname{
+  		margin-left: 30px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#pdtname{
+  		margin-top: 5px;
+  	}
+  	.description{
+  		margin-left: 47px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#text{
+  		margin-top: 5px;
+  	}
+  	.minprice{
+  		margin-left: 3px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#minprice{
+  		margin-top: 5px;
+  	}
+  	.sdate{
+  		margin-left: 62px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#sdate{
+  		margin-top: 5px;
+  	}
+  	.edate{
+  		margin-left: 65px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	#edate{
+  		margin-top: 5px;
+  	}
+  	.addimg{
+  		margin-left: 55px;
+  		font-family: sans-serif;
+  		font-size: 14px;
+  		color: white;
+  		margin-top: 10px;
+  	}
+  	.add{
+  		margin-top: 5px;
+  		color: white;
+  	}
+  	.tab-content{
+  		padding-top: 0px;
+  		margin-top: 0px;
+  	}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#hometab" data-toggle="tab">Home</a></li>
+				<li><a href="#buybid" data-toggle="tab">Buy at Bid</a></li>
+				<li><a href="#sellbid" data-toggle="tab">Sell at Bid</a></li>
+				<li><a href="#bidsch" data-toggle="tab">Bid Schedule</a></li>
+				<li><a href="#contacttab" data-toggle="tab">Conatct</a></li>
+			</ul>
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+			</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><button class="btn btn-danger btn-lg" data-target="#loginmodal" data-toggle="modal">Login</button></li>	
+				</ul>
+		</div>
+	</div>
+</nav>
+<div class="tab-content">
+	<div id="hometab" class="tab-pane active">
+		<div class="container">
+	<div class="body">
+		<header class="heading"> Registration-Form</header><hr></hr>
+	<div class="row ">
+         <div class="col-sm-12">
+             <div class="row">
+			     <div class="col-xs-4">
+          	         <label class="firstname">First Name :</label> 
+          	     </div>
+		         <div class="col-xs-8">
+		             <input type="text" name="fname" id="fname" placeholder="Enter your First Name" class="form-control ">
+             </div>
+		      </div>
+		 </div>
+		 
+		 
+         <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-4">
+                     <label class="lastname">Last Name :</label>
+                 </div>
+				<div class ="col-xs-8">	 
+		             <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" class="form-control last">
+                </div>
+		     </div>
+		 </div>
+		 <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-4">
+		             <label class="mail" >Email :</label>
+		         </div>
+			     <div class="col-xs-8"	>	 
+			          <input type="email" name="email"  id="mail"placeholder="Enter your email" class="form-control" >
+		         </div>
+		     </div>
+		 </div>
+          <div class="col-sm-12">
+		         <div class="row">
+				     <div class="col-xs-4">
+		 	              <label class="pass">Password :</label>
+		 	          </div>
+				  <div class="col-xs-8">
+			             <input type="password" name="password" id="pass" placeholder="Enter your Password" class="form-control">
+				 </div>
+          </div>
+		  </div>
+		  <div class="col-sm-12">
+		  	<div class="row">
+		  		<div class="col-xs-4">
+		  			<label class="number">Contact :</label>
+		  		</div>
+		  		<div class="col-xs-8">
+		  			<input type="number" name="contact" id="number" placeholder="Enter your number" class="form-control">
+		  		</div>
+		  	</div>
+		  </div>
+         <div class="col-sm-12">
+		     <div class ="row">
+                 <div class="col-xs-4 ">
+			       <label class="gender">Gender:</label>
+				 </div>
+			 
+			     <div class="col-xs-4 male">	 
+				     <input type="radio" name="gender"  id="gender" value="boy">Male
+				 </div>
+				 
+				 <div class="col-xs-4 female">
+				     <input type="radio"  name="gender" id="gender" value="girl" >Female
+			     </div>
+			
+		  	 </div>
+		  	</div>
+		     <div class="col-sm-12">
+		         <div class="btn btn-warning">Submit</div>
+		   </div>
+		 </div>
+	 </div>
+	</div>
+</div>
+<div id="buybid" class="tab-pane">
+	
+	<p><h1>Buy at Bid</h1></p>
+
+</div>
+	<div id="sellbid" class="tab-pane">
+		<div class="container">
+	<div class="body1">
+		<header class="heading heading1"> Product Registration</header><hr></hr>
+	<div class="row ">
+         <div class="col-sm-12">
+             <div class="row">
+			     <div class="col-xs-4">
+          	         <label class="category">Category :</label>
+          	     </div>
+		         <div class="col-xs-8">
+		             <input type="text" id="category" class="form-control ">
+             </div>
+		      </div>
+		 </div>
+		 
+		 
+         <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-4">
+                     <label class="pdtname">Product Name :</label>
+                 </div>
+				<div class ="col-xs-8">	 
+		             <input type="text" id="pdtname" class="form-control">
+                </div>
+		     </div>
+		 </div>
+		 <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-4">
+		             <label class="description" >Description :</label>
+		         </div>
+			     <div class="col-xs-8"	>	 
+			          <textarea rows="5" id="text"></textarea>
+		         </div>
+		     </div>
+		 </div>
+          <div class="col-sm-12">
+		         <div class="row">
+				     <div class="col-xs-4">
+		 	              <label class="minprice">Minimum Bid Price :</label>
+		 	          </div>
+				  <div class="col-xs-8">
+			             <input type="number" id="minprice" class="form-control">
+				 </div>
+          </div>
+		  </div>
+		  <div class="col-sm-12">
+		  	<div class="row">
+		  		<div class="col-xs-4">
+		  			<label class="sdate">Start Date :</label>
+		  		</div>
+		  		<div class="col-xs-8">
+		  			<input type="date" id="sdate" class="form-control">
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class="col-sm-12">
+		  	<div class="row">
+		  		<div class="col-xs-4">
+		  			<label class="edate">End Date :</label>
+		  		</div>
+		  		<div class="col-xs-8">
+		  			<input type="date" id="edate" class="form-control">
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class="col-sm-12">
+		  	<div class="row">
+		  		<div class="col-xs-4">
+		  			<label class="addimg">Add Image :</label>
+		  		</div>
+		  		<div class="col-xs-8 add">
+		  			<input type="file">
+		  		</div>
+		  	</div>
+		  </div>
+		     <div class="col-sm-12">
+		         <div class="btn btn-warning">Submit</div>
+		   </div>
+		 </div>
+		</div>
+	</div>
+	</div>
+	<div id="bidsch" class="tab-pane">
+		<p><h1>Bid Schedule</h1></p>
+	</div>
+	<div id="contacttab" class="tab-pane">
+		<p><h1>Contact tab</h1></p>
+	</div>
+</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="modal" id="loginmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="container">
+								<div class="loginrow">
+										<div class="col-md-6">
+											<div class="col-md-12">
+											<form>
+											<h2 class="text-center text-info"><b>Login</b></h2>
+											<hr size="10" align="center">
+											<div class="form-group">
+												<label for="username" class="text-info">Username</label>
+												<input type="text" id="username" class="form-control">
+											</div>
+											<div class="form-group">
+												<label for="pswd" class="text-info">Password</label>
+												<input type="password" id="pswd" class="form-control">
+											</div>
+											<div class="form-group">
+												<label for="rememberme" class="text-info"><span>Remember me</span> <span><input type="checkbox" id="rememberme"></span></label><br>
+												<input type="submit" class="btn btn-info btn-lg" value="Submit">
+											</div>
+											<div class="text-right" id="forgotpass">
+												<a href="#" class="text-info">Forgot Password</a>
+											</div>
+									</form>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

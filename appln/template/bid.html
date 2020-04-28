@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Bidding</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.grid-container{
+  		padding-right: 10px;
+  		padding-top: 10px;
+  		padding-bottom: 10px;
+  		padding-left: 10px;
+  		grid-gap: 0px;
+  		grid-column-gap: 0px;
+  	}
+  	.login{
+  		padding-top: 35px;
+  	}
+  	.grid-container{
+  		background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  	}
+  	.form{
+  		background-color: #696969;
+  		border: 0px;
+  		height: 400px;
+  		color: white; 
+  		border-style: solid;
+  		padding: 10px;
+  	}
+  </style>
+</head>
+<body>
+	<div class=" grid-container">
+	<nav class="navbar navbar-default navbar-inverse">
+	
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#"> Home </a></li>
+				<li><a href="#"> Contact </a></li>
+				<li><a href="#"> About </a></li>
+				<li><a href="#"> Products </a></li>
+			</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default"> Submit </button>
+				</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"> Subscribe </a></li>
+			</ul>
+		</div></nav>
+		<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="auction.png" class="responsive">
+			</div>
+			<div class="col-md-6">
+			<form class="login form-inline">
+				<div class="form-group">
+				<label id="inputUsername">
+				<input type="text" class="form-control" id="inputUsername" placeholder="Username or Email"><br>
+				<input type="checkbox"> Remember me</label>
+				<label id="inputPassword">
+				<input type="password" class="form-control" id="inputPassword" placeholder="Password"><br>
+				<a href="#" style="color: red">Forgotten your password? Click here</a></label><br>
+		
+		<button class="btn btn-warning"><span class="glyphicon glyphicon-user"></span> Login </button></div>
+	</form><br></div></div>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="bicpic1.png" class="responsive" width="100%">
+		</div>
+		<div class="col-md-6">
+			<div class="form">
+				<h2 align="center"><b> FREE SIGN UP</b></h2>
+				<h3 align="center"><b>Sign up takes less than 30 seconds.</b></h3>
+				<form class="form-inline">
+				<div class="form-group">
+					<label for="firstname"></label>
+					<input type="text" class="form-control col-md-3" placeholder="First Name" id="firstname" size="maxlength">
+						<label for="lastname"></label>
+					<input type="text" class="col-md-3 form-control " placeholder="Last Name" id="lastname" size="maxlength"></div><br><br>
+					<div class="form-group">
+						<label for="username"></label>
+					<input type="text" class="form-control col-lg-3"  placeholder="Choose Username" id="username" size="maxlength">
+					<label for="password"></label>
+					<input type="password" class="form-control col-lg-3" placeholder="Choose Password" id="password" size="maxlength"></div><br><br>
+					<div class="form-group">
+						<label for="email"></label>
+					<input type="email" class="col-md-3 form-control" placeholder="Email" id="email" size="maxlength">
+					<label for="phone"></label>
+					<input type="number" class="col-md-3 form-control" placeholder="Mobile Number" id="phone" size="maxlength"></div><br><br>
+					<input type="checkbox"> I accept the <a href="#" style="color: red"> Terms and Conditions</a> and <a href="#" style="color: red"> Privacy Policy</a> of Auction Depot<br><br>
+					<button class="btn btn-warning btn-lg col-md-3" ><span class="glyphicon glyphicon-user"></span> Sign Up </button>
+				</form>
+			</div>
+			</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

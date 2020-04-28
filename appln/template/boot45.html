@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 45</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+			<br><br><br>
+			<button class="btn btn-primary" id="btnpopover" title="popover title" data-content="popver content popover content popover content" data-toggle="popover" data-trigger="focus">Popover Example</button><!--default value for data-trigger is click. focus is used to close popver when v click outside. v can change the tri-->
+			<!--<button class="btn btn-primary" id="btnpopover" title="babtra" data-content="<img class='resposive' src='babtra.jpg'>" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom">Popover Example</button> this is to display pic in popover-->
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#btnpopover').popover();
+	});
+</script>
+</body>
+</html>

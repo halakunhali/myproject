@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 47</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.divStyle{
+  		padding-top: 40px;
+  	}
+  	body{
+  		position: relative;
+  	}
+  </style>
+</head>
+<body data-spy="scroll" data-target="#mainNavBar" data-offset="10"><!--data offset is given 500 if want the nav tab to change when only secobd images little is seen...-->
+	<nav class="navbar navbar-inverse navbar-fixed-top " id="mainNavBar">
+		<div class="container"><!--this is added to align the nav tab with images-->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#"> Babtra</a></li>
+				<li><a href="#divdesert"> Auction </a></li>
+				<li><a href="#divauction"> Bouque </a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Flowers<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#divbutterfly">Butterfly</a></li>
+						<li><a href="#divrose">Rose</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div id="divdesert" class="divStyle">
+		<h1>Babtra</h1>
+		<img src="babtra.jpg" class="img-responsive">
+	</div>
+	<div id="divauction" class="divStyle">
+		<h1>Auction</h1>
+		<img src="auction.png" class="img-responsive">
+	</div>
+	<div id="divbouque" class="divStyle">
+		<h1>Bouque</h1>
+		<img src="bouque.png" class="img-responsive">
+	</div>
+	<div id="divbutterfly" class="divStyle">
+		<h1>Butterfly</h1>
+		<img src="butterfly.jpg" class="img-responsive">
+	</div>
+	<div id="divrose" class="divStyle">
+		<h1>Rose</h1>
+		<img src="rose.jpg" class="img-responsive">
+	</div>
+</div>
+</body>
+</html>

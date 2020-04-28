@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 46</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+			<br><br>
+
+				<button id="btnsubmit" class="btn btn-primary">Submit</button><br><br>
+
+			<div class=" alert alert-danger collapse" id="myalert">
+				<a id="linkclose" href="#" class="close" data-dismiss="alert">&times;</a>
+				<strong>Error!</strong>There is a problem submitting your form
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#btnsubmit').click(function(){
+			$('#myalert').show('fade');/* if animatn needed thn oly give fade*/
+			setTimeout(function(){
+				$('#myalert').hide('fade');
+			}, 2000);
+		});
+		$('#linkclose').click(function(){
+			$('#myalert').hide('fade');
+		});
+	});
+	/* initialy once alert is close thn wen clickd submit it wont appear.so if we want to get alert when v click evrytym submit thn remove data-dismiss="alert" and give id="linkclose" to <a> and rite javaquery 4th$.*/
+	/*if we want the alert to be closed automatcly when manually not closed in 2sec then*/
+</script>
+</body>
+</html>

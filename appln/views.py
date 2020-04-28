@@ -1,0 +1,147 @@
+from django.shortcuts import render
+
+# Create your views here.
+def firstpg(request):
+	return render(request,'index.html')
+def name(request):
+	return render(request,'newfile.html')
+def java(request):
+	return render(request,'js19.html')
+def java18(request):
+	return render(request,'js18.html')
+def java17(request):
+	return render(request,'js17.html')
+def java16(request):
+	return render(request,'js16.html')
+def java15(request):
+	return render(request,'js15.html')
+def java14(request):
+	return render(request,'js14.html')
+def java13(request):
+	return render(request,'js13.html')
+def java12(request):
+	return render(request,'js12.html')
+def java11(request):
+	return render(request,'js11.html')
+def java10(request):
+	return render(request,'js10.html')
+def java9(request):
+	return render(request,'js9.html')
+def java8(request):
+	return render(request,'js8.html')
+def java7(request):
+	return render(request,'js7.html')
+def bt26(request):
+	return render(request,'boot26.html')
+def bt27(request):
+	return render(request,'boot27.html')
+def bt28(request):
+	return render(request,'boot28.html')
+def bt29(request):
+	return render(request,'boot29.html')
+def bt30(request):
+	return render(request,'boot30.html')
+def bt31(request):
+	return render(request,'boot31.html')
+def bt32(request):
+	return render(request,'boot32.html')
+def bt33(request):
+	return render(request,'boot33.html')
+def bt34(request):
+	return render(request,'boot34.html')
+def bt35(request):
+	return render(request,'boot35.html')
+def bt36(request):
+	return render(request,'boot36.html')
+def  bt37(request):
+	return render(request,'boot37.html')
+def bt38(request):
+	return render(request,'boot38.html')
+def bt39(request):
+	return render(request,'boot39.html')
+def bt40(request):
+	return render(request,'boot40.html')
+def bt41(request):
+	return render(request,'boot41.html')
+def bt42(request):
+	return render(request,'boot42.html')
+def bt43(request):
+	return render(request,'boot43.html')
+def bt44(request):
+	return render(request,'boot44.html')
+def bt45(request):
+	return render(request,'boot45.html')
+def bt46(request):
+	return render(request,'boot46.html')
+def bt47(request):
+	return render(request,'boot47.html')
+def proj(request):
+	return render(request,'regstrn.html')
+def ll(request):
+	return render(request,'login1.html')
+def bid(request):
+	return render(request,'neww.html')
+def project(request):
+	return render(request,'project.html')
+def htm1(request):
+	return render(request,'html1.html')
+def htm2(request):
+	return render(request,'html2.html')
+def htm3(request):
+	return render(request,'html3.html')
+def htm4(request):
+	return render(request,'html4.html')
+def htm5(request):
+	return render(request,'html5.html')
+def htm6(request):
+	return render(request,'html6.html')
+def htm7(request):
+	return render(request,'html7.html')
+def htm8o(request):
+	return render(request,'html8o.html')
+def htm8t(request):
+	return render(request,'html8t.html')
+def htm9(request):
+	return render(request,'html9.html')
+def htm10(request):
+	return render(request,'html10.html')
+def htm11(request):
+	return render(request,'html11.html')
+def htm12(request):
+	return render(request,'htm12.html')
+def htm13(request):
+	return render(request,'html13.html')
+def htm14(request):
+	return render(request,'html14.html')
+def cs1(request):
+	return render(request,'css1.html')
+def cs2(request):
+	return render(request,'css2.html')
+def cs3(request):
+	return render(request,'css3.html')
+def cs4(request):
+	return render(request,'css4.html')
+def cs5(request):
+	return render(request,'css5.html')
+def cs6(request):
+	return render(request,'css6.html')
+def cs7(request):
+	return render(request,'css7.html')
+def cs8(request):
+	return render(request,'css8.html')
+def cs9(request):
+	return render(request,'css9.html')
+def cs10(request):
+	return render(request,'css10.html')
+def cs11(request):
+	return render(request,'css11.html')
+def cs12(request):
+	return render(request,'css12.html')
+def cs13(request):
+	return render(request,'css13.html')
+def cs14(request):
+	return render(request,'css14.html')
+def cs15(request):
+	return render(request,'css15.html')
+def cs16(request):
+	return render(request,'css16.html')

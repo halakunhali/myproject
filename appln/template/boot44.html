@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 44</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6"><br><br><br>
+			Name : <input type="text" id="txtname" title="Bootstrap tooltip" data-toggle="tooltip"><span class="glyphicon glyphicon-info-sign" id="infoicon"></span>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#txtname').tooltip({
+			trigger:'manual'
+		});/* default the is hover..ie wen we hover over the box tooltip appears.bt if v want to appear it only when we click then v use trigger:'click' and if v want to appear it when v click on info then use trigger:'manual'*/
+		$('#infoicon').click(function(){/*if we want to appear it when v hover over infor then change to hover insted of click*/
+			$('#txtname').tooltip('toggle');/*this is to apper when v click on info..changing alone the trigger to manual is nt enuf.v need to add an id to info and call it here*/
+
+		});
+	});
+</script>
+</body>
+</html>

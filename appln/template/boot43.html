@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 43</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<br><br>
+			<button class="btn btn-primary" title="Bootstrap tooltip" data-toggle="tooltip">Button</button><!-- we will gt button. now need to add bootstrap styles-->
+		</div>
+	</div>
+</div>
+<!--in jquery 1st find button. here we r nt usind id selector..v r using attribute selctr and thn using tooltipfunction. now v gt default style.-->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip({
+			placement:'right'/* to show in right.insted of this we can also use data-placment in button
+			title:"bootstrap tooltip"
+			animation:false
+			delay:500 or {show:300,hide:500} for this animation shud be tru
+			also v can use title:"<h3>Help</h3><p>Click to submit</p>" to turn on this v need to on html
+			html:true*/
+		});
+	});
+</script>
+</body>
+</html>
